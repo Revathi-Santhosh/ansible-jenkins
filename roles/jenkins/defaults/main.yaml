@@ -1,2 +1,3 @@
 ---
 jenkins_backup_directory: '/data/backups'
+jenkins_backup_bucket: '/tmp/'

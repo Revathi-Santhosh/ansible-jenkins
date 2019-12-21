@@ -26,11 +26,11 @@
     groups: docker
   notify: Restart Jenkins
 
-- name: Set Jenkins-CI to listen only on 127.0.0.1
+- name: Set Jenkins-CI to listen only on myhosts
   lineinfile:
     dest: /etc/default/jenkins
     regexp: ^JENKINS_ARGS=
-    line: 'JENKINS_ARGS="--webroot=/var/cache/$NAME/war --httpPort=$HTTP_PORT --httpListenAddress=127.0.0.1"'
+    line: 'JENKINS_ARGS="--webroot=/var/cache/$NAME/war --httpPort=$HTTP_PORT --httpListenAddress=myhosts"'
   notify: Restart Jenkins
   tags:
     - jenkins-conf

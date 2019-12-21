@@ -1,8 +1,6 @@
 ---
-- hosts: jenkins
-  connection: local
+- hosts: myhosts
   become: True
-
   vars_files:
     #- 'local_settings.yml'
     - './vars/users.yaml'

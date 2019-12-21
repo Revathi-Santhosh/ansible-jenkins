@@ -14,7 +14,7 @@
 
 - name: Install Docker
   apt:
-    name: docker-ce=18.*
+    name: docker-ce
     state: present
     update_cache: yes
     cache_valid_time: 600

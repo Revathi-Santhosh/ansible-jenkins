@@ -1,2 +1,3 @@
 ---
 install_datadog: True
+datadog_key: admin@456

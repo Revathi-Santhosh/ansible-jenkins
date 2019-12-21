@@ -1,2 +1,4 @@
 ---
 package_version: "0.20"
+papertrail_host: '127.0.0.1'
+papertrail_port: '9000'
